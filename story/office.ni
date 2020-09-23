@@ -6,13 +6,35 @@ Volume 1 - Gameplay
 
 Book 1 - Status Bar
 
-Table of Standard Status
+Table of Morning Status
 left               			central            											right
 " [location]" 			""             											"Morning"
 
+Table of Lunch Status
+left               			central            											right
+" [location]" 			""             											"Lunch"
+
+Table of Afternoon Status
+left               			central            											right
+" [location]" 			""             											"Afternoon"
+
+Table of Happy Hour Status
+left               			central            											right
+" [location]" 			""             											"Happy Hour"
+
 Rule for constructing the status line: 
-	fill status bar with Table of Standard Status;
-	rule succeeds.
+	if Morning is happening:
+		fill status bar with Table of Morning Status;
+		rule succeeds;
+	otherwise if Lunch is happening:
+		fill status bar with Table of Lunch Status;
+		rule succeeds;		
+	otherwise if Afternoon is happening:
+		fill status bar with Table of Afternoon Status;
+		rule succeeds;
+	otherwise if Happy Hour is happening:
+		fill status bar with Table of Happy Hour Status;
+		rule succeeds;
 
 Book 2 - New Actions
 
@@ -66,9 +88,7 @@ Chapter 3 - The Traffic
 
 The traffic is a backdrop in Chicago Avenue and in Halsted Avenue. "Cars, trucks, and the occasional bus roar by on the busy four-lane thoroughfare. The noise can make it tough to think." Understand "cars", "street", "road", and "avenue" as the traffic. The traffic has some text called the smell. The smell is "There's a stench of gasoline and fumes on the breeze."
 
-Instead of doing something to the traffic, say "Best to stay on the sidewalk, where it's at least marginally safe."
-
-Instead of examining the traffic, say "[description of the traffic][paragraph break]";
+Instead of doing something other than examining with the traffic, say "Best to stay on the sidewalk, where it's at least marginally safe."
 
 Instead of listening to the traffic, say "[description of the traffic][paragraph break]";
 
@@ -111,7 +131,13 @@ Book 2 - Scenes
 
 Part 1 - Morning
 
-The Morning is a scene. The Morning begins when play begins.
+Morning is a scene. Morning begins when play begins. Morning ends when the turn count is 3.
+
+Lunch is a scene. Lunch begins when Morning ends.
+
+Afternoon is a scene. Afternoon begins when Lunch ends.
+
+Happy Hour is a scene. Happy Hour begins when Afternoon ends.
 
 Part 2 - Lunch
 
