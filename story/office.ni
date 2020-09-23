@@ -2,7 +2,25 @@
 
 Include Basic Screen Effects by Emily Short;
 
-Volume 1 - The World
+Volume 1 - Gameplay
+
+Book 1 - Status Bar
+
+Table of Standard Status
+left               			central            											right
+" [location]" 			""             											"Morning"
+
+Rule for constructing the status line: 
+	fill status bar with Table of Standard Status;
+	rule succeeds.
+
+Book 2 - New Actions
+
+Book 3 - Altered Grammar
+
+Book 4 - Custom Responses
+
+Volume 2 - The World
 
 Book 1 - Metaphysics
 
@@ -24,39 +42,54 @@ Halsted Avenue is a region in the Outdoors.
 
 Refurbished Office Building is a region.
 
+The Powell Media Office is a region in the Refurbished Office Building.
+
 Part 2 - Backdrops
 
 Chapter 1 - The Ground
 
-The ground is a backdrop. The ground is everywhere. The ground is scenery.
+The ground is a backdrop. The ground is everywhere. The ground is scenery. "[if location is in the Outdoors]The featureless pavement's almost the same color as the overcast sky. [otherwise if location is in the Powell Media Office]The polished cement floor is a smooth, dull gray." Understand "floor" as ground.
+
 Rule for printing the name of the ground:
-    if the location is in the Outdoors, say "pavement";
-    otherwise say "polished-cement floor";
+	if the location is in the Outdoors:
+		say "pavement";
+	otherwise:
+		say "polished-cement floor";
 
 Instead of putting something on the ground, try dropping the noun.
 
 Chapter 2 - The Sky
 
-The sky is a backdrop in the Outdoors. The description of the sky is "Cloudy. Maybe rain later?"
+The sky is a backdrop in the Outdoors. The description of the sky is "Cloudy. Hopefully that doesn't mean rain later."
 
 Chapter 3 - The Traffic
 
-The traffic is a backdrop in Chicago Avenue and in Halsted Avenue. "Cars, trucks, and the occasional bus roar by on the busy thoroughfare. It can make it tough to think." Understand "cars", "street", and "road" as the traffic.
+The traffic is a backdrop in Chicago Avenue and in Halsted Avenue. "Cars, trucks, and the occasional bus roar by on the busy four-lane thoroughfare. The noise can make it tough to think." Understand "cars", "street", "road", and "avenue" as the traffic. The traffic has some text called the smell. The smell is "There's a stench of gasoline and fumes on the breeze."
 
-Instead of smelling the location when the traffic is in the location, say "A stench of gasoline and fumes passes by on the breeze."
+Instead of doing something to the traffic, say "Best to stay on the sidewalk, where it's at least marginally safe."
 
-Instead of entering traffic, say "Best to stay on the sidewalk, where it's at least marginally safe."
+Instead of examining the traffic, say "[description of the traffic][paragraph break]";
+
+Instead of listening to the traffic, say "[description of the traffic][paragraph break]";
+
+Instead of listening to the location when the traffic is in the location, say "[description of the traffic][paragraph break]";
+
+Instead of smelling the traffic, say "[smell of the traffic][paragraph break]";
+
+Instead of smelling the location when the traffic is in the location, say "[smell of the traffic][paragraph break]";
 
 The traffic description rule is listed in the every turn rules. This is the traffic description rule:
-    if traffic is in the location and a random chance of 1 in 3 succeeds begin;
+    if traffic is in the location and a random chance of 1 in 10 succeeds begin;
         choose a random row in the Table of Traffic Effects;
         say "[Effect entry][paragraph break]";
     end if.
 
 Table of Traffic Effects
 Effect
-"A mufflerless motorcycle zooms by at what seems like twice the speed limit."
-"A bus rattles past."
+"A mufflerless motorcycle passes at what seems like twice the speed limit."
+"A semi grinds past, spewing a trail of black exhaust overhead."
+"There's a fresh wave of vehicles from the light at Chicago and Halsted: a couple of sedans, a gleaming SUV, and a lone biker, gamely holding her own in the middle of the right lane."
+"Two bikers whiz by, legs pumping."
 
 Book 3 - The Player
 
@@ -66,13 +99,13 @@ Part 2 - Knowledge
 
 Part 3 - Starting Inventory
 
-Volume 2 - The Plot
+Volume 3 - The Plot
 
 Book 1 - When Play Begins
 
 When play begins:
 	say "Bus 66 pulls up to Chicago and Halsted, and you step off the back steps. It's going  be a long day.";
-		wait for any key
+		wait for any key;
 
 Book 2 - Scenes
 
@@ -80,22 +113,44 @@ Part 1 - Morning
 
 The Morning is a scene. The Morning begins when play begins.
 
-When the Morning begins: change the left hand status line to " [the player's location]"; change the right hand status line to "Morning ";
-
 Part 2 - Lunch
 
 Part 3 - Afternoon
 
 Part 4 - Happy Hour
 
+Volume 4 - The Game
+
+Book 1 - The Office
+
+Part 1 - The Entrance
+
+Chapter 1 - Outside
+
 Front Entrance is a room in Chicago Avenue. "You're standing at the front of the blah, blah, blah."
 
-The Office is a region. The Entryway is south of the Front Entrance. The Entryway is in the Office. "A little landing of pebbled metal. A set of steps and an accessible ramp lead east to the lobby."
+Instead of going inside in the Front Entrance, try going south.
+
+Chapter 2 - Inside
+
+The Entryway is south of the Front Entrance. The Entryway is in the Powell Media Office. "A little landing of pebbled metal. A set of steps and an accessible ramp lead east to the lobby."
 	A device called the TV is here. The TV is switched on. "[if switched on]A TV plays corporate pablam on an endless loop. [else]The TV is off."
 
-The Lobby is east of the Entryway. "A little white desk is here."
+The Lobby is east of the Entryway. The Lobby is in the Powell Media Office. "A little white desk is here."
 
-The Nook is south of the Lobby. "A small couch sits here."
+
+
+
+
+
+
+
+
+
+
+
+
+[The Nook is south of the Lobby. "A small couch sits here."
 
 The Vending Machines are east of the Nook. "A pair of vending machines sit here."
 
@@ -114,3 +169,5 @@ The Second Row is north of First Floor—West End. "Kelly, Tina, and Amy sit her
 The Third Row is northwest of First Floor—West End. "Ryan and Brenda sit here."
 
 Reilly's Office is south of First Floor—West End. "An ultra-modern blah blah."
+
+The]
