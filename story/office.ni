@@ -6,41 +6,23 @@ Volume 1 - Gameplay
 
 Book 1 - Status Bar
 
-Table of Morning Status
-left               			central            											right
-" [location]" 			""             											"Morning"
+Table of Game Status
+left	central	right
+" [location]" 	""	"[if Morning is happening]Morning[otherwise if Lunch is happening]Lunch[otherwise if Afternoon is happening]Afternoon[otherwise if Happy Hour is happening]Happy Hour[end if]"
 
-Table of Lunch Status
-left               			central            											right
-" [location]" 			""             											"Lunch"
-
-Table of Afternoon Status
-left               			central            											right
-" [location]" 			""             											"Afternoon"
-
-Table of Happy Hour Status
-left               			central            											right
-" [location]" 			""             											"Happy Hour"
-
-Rule for constructing the status line: 
-	if Morning is happening:
-		fill status bar with Table of Morning Status;
-		rule succeeds;
-	otherwise if Lunch is happening:
-		fill status bar with Table of Lunch Status;
-		rule succeeds;		
-	otherwise if Afternoon is happening:
-		fill status bar with Table of Afternoon Status;
-		rule succeeds;
-	otherwise if Happy Hour is happening:
-		fill status bar with Table of Happy Hour Status;
-		rule succeeds;
+Rule for constructing the status line: 	
+	fill status bar with the Table of Game Status;
+	rule succeeds;
 
 Book 2 - New Actions
 
 Book 3 - Altered Grammar
 
 Book 4 - Custom Responses
+
+book 5 - Tests
+
+Test all with "test ground / test sky / test traffic";
 
 Volume 2 - The World
 
@@ -80,13 +62,23 @@ Rule for printing the name of the ground:
 
 Instead of putting something on the ground, try dropping the noun.
 
+Test ground with "x ground / s / x ground / n";
+
 Chapter 2 - The Sky
 
 The sky is a backdrop in the Outdoors. The description of the sky is "Cloudy. Hopefully that doesn't mean rain later."
 
+Instead of doing something other than examining with the sky, say "How exactly do you plan to do that?"
+
+Test sky with "x sky / touch sky / smell sky";
+
 Chapter 3 - The Traffic
 
-The traffic is a backdrop in Chicago Avenue and in Halsted Avenue. "Cars, trucks, and the occasional bus roar by on the busy four-lane thoroughfare. The noise can make it tough to think." Understand "cars", "street", "road", and "avenue" as the traffic. The traffic has some text called the smell. The smell is "There's a stench of gasoline and fumes on the breeze."
+The traffic is a backdrop in Chicago Avenue and in Halsted Avenue. "Cars, trucks, and the occasional bus roar by on the busy four-lane thoroughfare. The noise can make it tough to think." 
+
+Understand "cars", "street", "road", and "avenue" as the traffic. 
+
+The traffic has some text called the smell. The smell is "There's a stench of gasoline and fumes on the breeze."
 
 Instead of doing something other than examining with the traffic, say "Best to stay on the sidewalk, where it's at least marginally safe."
 
@@ -103,6 +95,8 @@ The traffic description rule is listed in the every turn rules. This is the traf
         choose a random row in the Table of Traffic Effects;
         say "[Effect entry][paragraph break]";
     end if.
+
+Test traffic with "x traffic / listen to traffic / smell traffic / listen / smell";
 
 Table of Traffic Effects
 Effect
@@ -131,19 +125,19 @@ Book 2 - Scenes
 
 Part 1 - Morning
 
-Morning is a scene. Morning begins when play begins. Morning ends when the turn count is 3.
-
-Lunch is a scene. Lunch begins when Morning ends.
-
-Afternoon is a scene. Afternoon begins when Lunch ends.
-
-Happy Hour is a scene. Happy Hour begins when Afternoon ends.
+Morning is a scene. Morning begins when play begins. Morning ends when the turn count is 4.
 
 Part 2 - Lunch
 
+Lunch is a scene. Lunch begins when Morning ends.
+
 Part 3 - Afternoon
 
+Afternoon is a scene. Afternoon begins when Lunch ends.
+
 Part 4 - Happy Hour
+
+Happy Hour is a scene. Happy Hour begins when Afternoon ends.
 
 Volume 4 - The Game
 
@@ -153,9 +147,9 @@ Part 1 - The Entrance
 
 Chapter 1 - Outside
 
-Front Entrance is a room in Chicago Avenue. "You're standing at the front of the blah, blah, blah."
+Powell Media Front Entrance is a room in Chicago Avenue. "Before you the glass double doors to Powell Media."
 
-Instead of going inside in the Front Entrance, try going south.
+Instead of going inside in the Powell Media Front Entrance, try going south.
 
 Chapter 2 - Inside
 
