@@ -90,7 +90,7 @@ Instead of smelling the traffic, say "[smell of the traffic][paragraph break]";
 
 Instead of smelling the location when the traffic is in the location, say "[smell of the traffic][paragraph break]";
 
-The traffic description rule is listed in the every turn rules. This is the traffic description rule:
+Every turn (this is the traffic description rule):
     if traffic is in the location and a random chance of 1 in 10 succeeds begin;
         choose a random row in the Table of Traffic Effects;
         say "[Effect entry][paragraph break]";
@@ -125,7 +125,7 @@ Book 2 - Scenes
 
 Part 1 - Morning
 
-Morning is a scene. Morning begins when play begins. Morning ends when the turn count is 4.
+Morning is a scene. Morning begins when play begins.
 
 Part 2 - Lunch
 
