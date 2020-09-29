@@ -12,7 +12,6 @@ Powell Media Front Entrance is a room in Chicago Avenue. "Before you the glass d
 
 Instead of going inside in the Powell Media Front Entrance, try going south.
 
-
 Part 2 - Inside
 
 The Entryway is south of the Powell Media Front Entrance. The Entryway is in the Powell Media Office. "A little landing of pebbled metal. A set of steps and an accessible ramp lead east to the lobby."

@@ -6,9 +6,17 @@ Volume 1 - All Tests
 
 Test all with "test world / test player";
 
-Volume 2 - World Tests
+Volume 2 - Language Tests
 
-Test world with "test ground / test sky / test traffic"
+Test language with "test inventory";
+
+Book 1 - Inventory Tests
+
+Test inventory with "take box / i"
+
+Volume 3 - World Tests
+
+Test world with "test ground / test sky / test traffic";
 
 Book 1 - Ground Tests
 

@@ -80,7 +80,7 @@ Book 2 - Knowledge
 
 Book 3 - Starting Inventory
 
-The player is wearing a jean jacket and business-casual attire. The player is carrying a messenger bag, a cell phone, and a wallet.
+The player is wearing a jean jacket, a messenger bag, and business-casual attire. The player is carrying a wallet.
 
 Part 1 - The Jean Jacket
 
@@ -88,15 +88,15 @@ The description of the jean jacket is "Your favorite garment. A perfect fit, a n
 
 Part 2 - Business-Casual Attire
 
-The description of the business-casual attire is "A perfectly middle-of-the-road ensemble. It makes no statements, which also means it attracts no attention, which is just how you like it." The business-casual attire has the indefinite article "your". Understand "clothes", and "garments", and "outfit" as the business-casual attire.
+The description of the business-casual attire is "A perfectly middle-of-the-road ensemble. It makes no statements, which also means it attracts no attention, which is just how you like it." Understand "clothes", and "garments", and "outfit" as the business-casual attire.
 
 Part 3 - Messenger Bag
 
-The messenger bag is the player's holdall. The messenger bag is closed. The messenger bar has the indefinite article "your". The description of the messenger bag is "A remanant of your bike-to-work days, the Mission Workshop bag is huge, with a wide main pocket covered by a buckled flap of waterproof gray canvas."
+The messenger bag is the player's holdall. The messenger bag has the indefinite article "your". The description of the messenger bag is "A remanant of your bike-to-work days, the Mission Workshop bag is huge, with a wide main pocket covered by a buckled flap of waterproof gray canvas."
 
 Part 4 - Cell phone
 
-The cell phone has a number called battery life that varies. The battery life is initially 35. The description of the cell phone is "It's almost two years old now, which makes it ancient, mostly good for scrolling through Twitter. You left your apartment with it fully charged this morning, and already it's[if battery life is greater than 0] down to [battery life in words] percent battery.[otherwise] dead.[end if]"
+The cell phone is a thing. The cell phone is in the messenger bag. The cell phone has the indefinite article "your". The cell phone has a number called battery life that varies. The battery life is initially 35. The description of the cell phone is "It's almost two years old now, which makes it ancient, mostly good for scrolling through Twitter. You left your apartment with it fully charged this morning, and already it's[if battery life is greater than 0] down to [battery life in words] percent battery.[otherwise] dead.[end if]"
 
 Every turn (this is the phone-dying rule):
 	if the remainder after dividing the turn count by 5 is 0 and the battery life is greater than 0:
