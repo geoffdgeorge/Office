@@ -4,7 +4,7 @@ Use authorial modesty.
 
 Volume 1 - All Tests
 
-Test all with "test world / test player";
+Test all with "test world / test player / test language";
 
 Volume 2 - Language Tests
 

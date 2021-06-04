@@ -17,13 +17,31 @@ Calling is an action applying to one thing.
 
 Understand "call [anything]" as calling. Understand the command "phone" as "call";
 
-Before calling:
+Check calling:
 	if the noun is a person:
 		say "But you hate phone calls." instead;
 	else if the noun is nowhere:
-		say "What are you even talking about? Seems like you could really use some coffee.";
+		say "What are you even talking about? Seems like you could really use some coffee." instead;
 	else:
 		say "You're well aware that's not a thing you can call." instead;
+
+Book 2 - Swiping
+
+Swiping it in is an action applying to one carried thing and one visible thing.
+
+Understand "swipe [something preferably held] in [something]" as swiping it in.
+
+Check swiping:
+	if the noun is not a keycard:
+		say "How exactly do you plan to swipe that in that?[paragraph break]" instead;
+	if the second noun is not the card reader:
+		say "How exactly do you plan to swipe that in that?[paragraph break]" instead;
+
+Carry out swiping:
+	now the glass double doors are unlocked;
+
+Report swiping:
+	say "The card reader makes a satisfying beep and a small green light blinks as you run the keycard through the slot. The glass doors unlock with a loud [bold type]CHUNK[roman type].";
 
 Volume 3 - Altered Grammar
 
@@ -70,14 +88,14 @@ Instead of taking inventory:
 Book 2 - Call Responses
 
 Rule for printing a parser error when the latest parser error is the noun did not make sense in that context error:
-	if the player's command includes "call":
+	if the player is holding the cell phone and the player's command includes "call":
 		if the player's command includes "office":
 			say "But you hate phone calls.";
 		otherwise if the player's command includes "lobby":
 			say "But you hate phone calls.";
 		otherwise:
 			say "What are you even talking about? Seems like you could really use some coffee.";
-	otherwise if the player's command includes "phone":
+	otherwise if the player is holding the cell phone and the player's command includes "phone":
 		if the player's command includes "office":
 			say "But you hate phone calls.";
 		otherwise if the player's command includes "lobby":
@@ -85,6 +103,6 @@ Rule for printing a parser error when the latest parser error is the noun did no
 		otherwise:
 			say "What are you even talking about? Seems like you could really use some coffee.";
 	otherwise:
-		say "What are you even talking about? Seems like you could really use some coffee.";
+		say "Probably best to have your phone in your hand first.";
 
 Gameplay ends here.

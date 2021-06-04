@@ -20,9 +20,9 @@ Chicago Avenue is a region in the Outdoors.
 
 Halsted Avenue is a region in the Outdoors.
 
-Refurbished Office Building is a region.
+The Office Complex is a region.
 
-The Powell Media Office is a region in the Refurbished Office Building.
+The Powell Media Office is a region in the Office Complex.
 
 Book 2 - Backdrops
 
@@ -90,9 +90,11 @@ Part 2 - Business-Casual Attire
 
 The description of the business-casual attire is "A perfectly middle-of-the-road ensemble. It makes no statements, which also means it attracts no attention, which is just how you like it." Understand "clothes", and "garments", and "outfit" as the business-casual attire.
 
+Instead of taking off the business-casual attire, say "Look, stripping down to nothing is great in the privacy of your own home, but it's hardly something you're interested in doing here."
+
 Part 3 - Messenger Bag
 
-The messenger bag is the player's holdall. The messenger bag has the indefinite article "your". The description of the messenger bag is "A remanant of your bike-to-work days, the Mission Workshop bag is huge, with a wide main pocket covered by a buckled flap of waterproof gray canvas."
+The messenger bag is the player's holdall. The messenger bag has the indefinite article "your". The messenger bag is open. The messenger bag is not openable. The description of the messenger bag is "A remanant of your bike-to-work days, the Mission Workshop bag is huge, with a wide main pocket covered by a buckled flap of waterproof gray canvas."
 
 Part 4 - Cell phone
 
