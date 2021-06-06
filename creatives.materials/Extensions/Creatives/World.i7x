@@ -104,4 +104,8 @@ Every turn (this is the phone-dying rule):
 	if the remainder after dividing the turn count by 5 is 0 and the battery life is greater than 0:
 		decrement the battery life;
 
+Part 5 — wallet
+
+The wallet is a container. The wallet is open. The wallet is not openable. The wallet contains a work ID. The description of the wallet is "A flap of brown leather, worn at every corner."
+
 World ends here.

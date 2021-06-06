@@ -54,7 +54,7 @@ Volume 2 - Scenes
 
 Book 1 - Morning
 
-Morning is a scene. Morning begins when play begins.
+Morning is a scene. Morning begins when play begins. [Morning ends when the turn count is three.]
 
 When Morning ends:
 	now the right hand status line is "Lunch";

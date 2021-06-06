@@ -14,15 +14,19 @@ Powell Media Front Entrance is a room in Chicago Avenue. "A dull bit of sidewalk
 
 Instead of going inside in the Powell Media Front Entrance, try going south.
 
+Before going west in the Powell Media Front Entrance:
+	if Morning is happening:
+		say "It's several blocks back to the Blue Line, and you've got work to do." instead;
+
 The glass double doors are a door. The glass double doors have the indefinite article "a pair of". The glass double doors are plural-named. The glass double doors are south of the Powell Media Front Entrance. The glass double doors are closed and locked. The description of the glass double doors is "Glass from top to bottom, with long, vertical steel handles. The modern sans-serif-style 'P' of the Powell Logo is painted on the left door. Only the office's entryway is visible on the other side."
 
-A thing called the card reader is in the Powell Media Front Entrance. Understand "reader" as the card reader. The card reader is fixed in place. The description of the card reader is "The little gray box is affixed to to the wall. There's a slot along one side[if the player has not carried a keycard], where you would swipe your card, if you hadn't forgotten yours. Guess you'll have to find another way in[end if]."
+A thing called the card reader is in the Powell Media Front Entrance. Understand "reader" as the card reader. The card reader is fixed in place. The description of the card reader is "The little gray box is affixed to to the wall. There's a slot along one side[if the player has not carried a keycard], where you would swipe your card, if you had one. Guess you'll have to find another way in[end if]."
 
 Instead of inserting something into the card reader, try swiping the noun in the card reader.
 
 Before listing nondescript items of the Powell Media Front Entrance:
 	if the card reader is marked for listing:
-		say "Just to the left of the doors is the card reader[if the player is not carrying a keycard] you'd normally use to get in, if you had your keycard[end if].";
+		say "Just to the left of the doors is the card reader[if the player is not carrying a keycard] you'd normally use to get in, if you had a keycard[end if].";
 		now the card reader is not marked for listing;
 	if the glass double doors are marked for listing:
 		now the glass double doors are not marked for listing;
