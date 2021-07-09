@@ -2,11 +2,11 @@ Morning by Creatives begins here.
 
 Use authorial modesty.
 
-Volume 1 - The Office
+Volume 1 - The Office Complex
 
-Book 1 - The Entrance
+Book 1 - Outside
 
-Part 1 - Outside
+Part 1 - Powell Media Exterior
 
 Chapter 1 - Powell Media Front Entrance
 
@@ -36,19 +36,25 @@ Every turn (this is the glass-doors-locking rule):
 		say "There's another loud [bold type]CHUNK[roman type] as the glass double doors lock again automatically.";
 		now the glass double doors are locked;
 
-Chapter 2 - 768 West Chicago Avenue
+Part 2 — Daniels & Richards Building Exterior
+
+Chapter 1 - 768 West Chicago Avenue
 
 768 West Chicago Avenue is a room in Chicago Avenue. 768 West Chicago Avenue is east of the Powell Media Front Entrance. "Five stories of red brick loom. Fading paint in an arc along the top reads 'DANIELS & RICHARDS CO.' The structure is from at least the turn of the last century, when horses would have clopped by at regular intervals. It was almost surely a manufacturing space of some sort, once upon a time, but now it's a mixed-use commercial office building, like so many others throughout the city. To the south and up a couple of steps is the entrance. To the east, a little further down the sidewalk, is the restaurant and bar taking up the building's first-floor retail space."
 
 Instead of going inside in the 768 West Chicago Avenue, try going south.
 
-Chapter 3 - Restaurant Facade
+Chapter 2 - Halal You Can Eat Facade
 
 The Restaurant Facade is a room in Chicago Avenue. The Restaurant Facade is east of 768 West Chicago Avenue. "The sign above the door to the south says 'HALAL YOU CAN EAT,' each 'L' fashioned from illustrated chicken skewers and the 'O' a big piece of falafel. Through the windows you see[if Morning is happening] a dark room, chairs still overturned on top of tables[else] a healthy crowd shoveling in fries dipped in hummus and biting into stuffed shwarma pitas[end if]."
 
 Instead of going inside in the Restaurant Facade, try going south.
 
-Part 2 - Inside 768 West Chicago Avenue
+Book 2 - Inside
+
+Part 1 - Daniels & Richards Building Interior
+
+Chapter 1 - Security Desk
 
 The Security Desk is south of 768 West Chicago Avenue. The Security Desk is in the Office Complex. "The gray slab is as dull as the flourescents that illuminate it. A security guard sits on the other side, thumbing through something on his phone. A hallway leads south, further into the building. Through a door to the east wafts the smell of fresh grounds from the Cardinal Cafe. A plain gray door stands to the west."
 
@@ -81,7 +87,9 @@ Before listing nondescript items of the Security Desk:
 	if the security guard is marked for listing:
 		now the security guard is not marked for listing;
 
-Part 3 - Inside Powell Media Office
+Part 2 - Powell Media Interior
+
+Chapter 1 - Entryway
 
 The Entryway is south of the glass double doors. The Entryway is in the Powell Media Office. "A little landing of pebbled metal. A set of steps and an accessible ramp lead east to the lobby."
 	A device called the TV is here. The TV is switched on. "[if switched on]A TV plays corporate pablam on an endless loop[else]The TV is off[end if]."
